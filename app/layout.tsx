@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Flexibble',
   description: 'Dribble clone, showcase and discover projects',
 };
-  
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
