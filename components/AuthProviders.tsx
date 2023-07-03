@@ -35,8 +35,9 @@ const AuthProviders = () => {
                     <button 
                         key={ i }
                         onClick={ () => signIn(provider?.id) }
+                        className='bg-orange-500 px-3 py-1 text-white rounded-md'
                     >
-                        { provider.id }
+                        Sign in
                     </button>
                 ))}
             </div>
