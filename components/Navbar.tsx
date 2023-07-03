@@ -39,9 +39,10 @@ const Navbar = async () => {
                             <Image 
                                 src={ session.user.image }
                                 alt={ session.user.name }
-                                width={ 40 }
-                                height={ 40 }
+                                width={ 35 }
+                                height={ 35 }
                                 className='rounded-full'
+                                draggable='false'
                             />
                         )}
                         <Link href='/create-project'>Share work</Link>
