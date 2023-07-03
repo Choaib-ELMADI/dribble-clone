@@ -117,7 +117,7 @@ body {
 }
 
 .modal_wrapper {
-    @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-white rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+    @apply flex justify-start items-center flex-col absolute h-[92%] w-full bottom-0 bg-white rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
 }
 
 .navbar {
