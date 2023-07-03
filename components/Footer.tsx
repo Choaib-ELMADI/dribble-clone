@@ -16,7 +16,7 @@ const FooterColumn = ({ title, links }: ColumnProps) => (
                 links.map((sublink) => (
                     <Link 
                         key={ sublink }
-                        href={ `/${ sublink.toLowerCase().replaceAll(' ', '-') }` }
+                        href='/'
                     >
                         { sublink }
                     </Link>
