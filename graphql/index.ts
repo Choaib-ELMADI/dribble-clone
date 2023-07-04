@@ -62,6 +62,29 @@ export const getProjectByIdQuery = `
     }
 `;
 
+export const getProjectsOfUserQuery = `
+    query getUserProjects($id: ID!, $last: Int = 4) {
+        user(by: { id: $id }) {
+            id
+            name
+            email
+            description
+            avatarUrl
+            githubUrl
+            linkedInUrl
+            projects(last: $last) {
+                edges {
+                node {
+                    id
+                    title
+                    image
+                }
+                }
+            }
+        }
+    }
+`;
+
 export const createUserMutation = `
     mutation CreateUser($input: UserCreateInput!) {
         userCreate(input: $input) {
