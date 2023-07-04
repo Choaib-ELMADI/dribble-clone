@@ -55,8 +55,8 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 </div>
 
                 {session?.user?.email === projectDetails?.createdBy?.email && (
-                    <div className="flex justify-end items-center gap-2 bg-red-500">
-                        <ProjectActions />
+                    <div className="flex justify-end items-center gap-2">
+                        <ProjectActions projectId={ projectDetails?.id } />
                     </div>
                 )}
             </section>
