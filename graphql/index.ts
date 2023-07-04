@@ -42,6 +42,26 @@ export const projectsQuery = `
     }
 `;
 
+export const getProjectByIdQuery = `
+    query GetProjectById($id: ID!) {
+        project(by: { id: $id }) {
+            id
+            title
+            description
+            image
+            liveSiteUrl
+            githubUrl
+            category
+            createdBy {
+                id
+                name
+                email
+                avatarUrl
+            }
+        }
+    }
+`;
+
 export const createUserMutation = `
     mutation CreateUser($input: UserCreateInput!) {
         userCreate(input: $input) {

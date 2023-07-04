@@ -17,7 +17,7 @@ type Props = {
 
 const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
     const [randomLikes, setRandomLikes] = useState(100);
-    const [randomViews, setRandomViews] = useState('1k');
+    const [randomViews, setRandomViews] = useState('1.0k');
 
     useEffect(() => {
         setRandomLikes(Math.floor(Math.random() * 10_000));
