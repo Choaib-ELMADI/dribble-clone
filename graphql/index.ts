@@ -124,3 +124,19 @@ export const deleteProjectMutation = `
         }
     }
 `;
+
+export const updateProjectMutation = `
+	mutation UpdateProject($id: ID!, $input: ProjectUpdateInput!) {
+		projectUpdate(by: { id: $id }, input: $input) {
+			project {
+				id
+				title
+				description
+				createdBy {
+					email
+					name
+				}
+			}
+		}
+	}
+`;
